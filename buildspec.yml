@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+  build:
+    commands:
+      - echo "Entered build phase"
+      - mvn clean package
+  post_build:
+    commands:
+      - echo "Build Complete"
+artifacts:
+  files:
+    - target/demo-spring-deployment-ec2-using-codedeploy-*.jar
+    - scripts/*.sh
+    - appspec.yml
+  discard-paths: yes
