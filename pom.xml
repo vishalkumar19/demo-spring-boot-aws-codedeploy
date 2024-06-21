@@ -14,7 +14,7 @@
 	<name>demo-spring-deployment-ec2-using-codedeploy</name>
 	<description>demo-spring-deployment-ec2-using-codedeploy</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -27,6 +27,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
 	</dependencies>
 
 	<build>
